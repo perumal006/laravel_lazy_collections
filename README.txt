@@ -2,5 +2,5 @@
 2. Create a db 'reservation_management' and import reservation_management.sql.
 3. Import the Rooms Reservation Managemnt.postman_collection into postman APP.
 4. Start the server.
-5. Start Check the api using postman.
+5. Use postman to check API.
 
