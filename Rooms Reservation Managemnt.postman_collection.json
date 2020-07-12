@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "2ff0d29e-ea9d-48d0-adf2-9e7b2e47caea",
+		"name": "Rooms Reservation Managemnt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Reserve Room",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "room_type",
+							"value": "AC",
+							"description": "AC (10 Rooms) , Non-AC (20 Rooms)",
+							"type": "text"
+						},
+						{
+							"key": "from_date",
+							"value": "2020-07-13",
+							"description": "Checkin date",
+							"type": "text"
+						},
+						{
+							"key": "to_date",
+							"value": "2020-07-13",
+							"description": "Checkout date",
+							"type": "text"
+						},
+						{
+							"key": "no_of_rooms",
+							"value": "5",
+							"description": "No of rooms Need",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "perumal",
+							"description": "Cust name",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "perumal@gmail.com",
+							"description": "Cust email",
+							"type": "text"
+						},
+						{
+							"key": "mobile",
+							"value": "9790932305",
+							"description": "Cust phone",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/reservation_management/rooms/reserve",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"reservation_management",
+						"rooms",
+						"reserve"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reports",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/reservation_management/rooms/get_reports",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"reservation_management",
+						"rooms",
+						"get_reports"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
